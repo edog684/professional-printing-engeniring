@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printed Designs - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>3D Printed Designs</h1>
+            <p class="tagline">Sleek, Professional, Custom 3D Printing Solutions</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#holiday-specials">Holiday Specials</a></li>
+                <li><a href="#practical-items">Practical Items</a></li>
+                <li><a href="#silent-fidgets">Silent Fidgets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slideshow Gallery Section -->
+        <section id="gallery">
+            <h2>Portfolio Showcase</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="https://via.placeholder.com/800x600?text=3D+Print+Design+1" alt="3D Print 1">
+                    <div class="caption">Elegant Modern Design</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://via.placeholder.com/800x600?text=3D+Print+Design+2" alt="3D Print 2">
+                    <div class="caption">Functional Masterpiece</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://via.placeholder.com/800x600?text=3D+Print+Design+3" alt="3D Print 3">
+                    <div class="caption">Artistic Creation</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://via.placeholder.com/800x600?text=3D+Print+Design+4" alt="3D Print 4">
+                    <div class="caption">Custom Solution</div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+            <!-- Dots for slide indicators -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+
+        <!-- Holiday Specials Section -->
+        <section id="holiday-specials" class="category-section">
+            <h2>Holiday Specials</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Christmas+Ornament" alt="Christmas Ornament">
+                    <h3>Christmas Ornaments</h3>
+                    <p>Custom festive ornaments for your holiday season</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Holiday+Figurines" alt="Holiday Figurines">
+                    <h3>Holiday Figurines</h3>
+                    <p>Unique collectible figurines for festive displays</p>
+                    <span class="price">$18.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Gift+Box+Topper" alt="Gift Box Topper">
+                    <h3>Gift Box Toppers</h3>
+                    <p>Elegant toppers to personalize your holiday gifts</p>
+                    <span class="price">$8.99</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Items Section -->
+        <section id="practical-items" class="category-section">
+            <h2>Practical Items</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Phone+Stand" alt="Phone Stand">
+                    <h3>Phone Stand</h3>
+                    <p>Sturdy and sleek phone holder for any device</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Desk+Organizer" alt="Desk Organizer">
+                    <h3>Desk Organizer</h3>
+                    <p>Keep your workspace organized and tidy</p>
+                    <span class="price">$14.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Cable+Management" alt="Cable Management">
+                    <h3>Cable Management System</h3>
+                    <p>Organize cables efficiently and cleanly</p>
+                    <span class="price">$11.99</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Silent Fidgets Section -->
+        <section id="silent-fidgets" class="category-section">
+            <h2>Silent Fidgets</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Infinity+Cube" alt="Infinity Cube">
+                    <h3>Infinity Cube</h3>
+                    <p>Endless fidgeting without making a sound</p>
+                    <span class="price">$7.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Stress+Relief+Toy" alt="Stress Relief Toy">
+                    <h3>Stress Relief Toy</h3>
+                    <p>Calming fidget toy with smooth finish</p>
+                    <span class="price">$6.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Puzzle+Fidget" alt="Puzzle Fidget">
+                    <h3>Puzzle Fidget</h3>
+                    <p>Interactive puzzle that keeps hands engaged</p>
+                    <span class="price">$9.99</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 3D Printed Designs. All rights reserved.</p>
+        <p>Crafted with precision and passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
